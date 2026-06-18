@@ -8,10 +8,11 @@ function to_boolean(f) {
 function to_array(l) {
   var array = []
   while (!to_boolean(IS_EMPTY(l))) {
-    array.push(CAR(l))
-    l = CDR(l)
-  }
-  return array
+      array.push(CAR(l))
+      l = CDR(l)
+    }
+    return array
+    // return to_boolean(IS_EMPTY(l)) ? [] : [CAR(l), ...to_array(CDR(l))]
 }
 
 function to_char(c) {
