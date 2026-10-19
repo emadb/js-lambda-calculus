@@ -25,7 +25,7 @@ function to_string(l) {
 
 // Sono sempre stato attratto da linguaggi di programmazione semplici: C# -> Ruby -> Javascript -> Elixir
 // e ho voluto provare a capire fino a che punto si può arrivare.
-// Qual'è l'essenza di un linguaggio di programmazione?
+// Qual è l'essenza di un linguaggio di programmazione?
 // Come Russel nei "The Principles of Mathematics" è arrivato all'essenza della matematica possiamo
 // arrivare all'essenza della programmazione.
 
@@ -34,7 +34,7 @@ function to_string(l) {
 // - No operatori
 // - No array
 // - No cicli/if/ecc..
-// - Solo funzioni (e assegazione per comodità)
+// - Solo funzioni (e assegnazione per comodità)
 // - Partiamo dal basso, costruiamo mattoncini che componiamo
 
 // Turing Machine: ha portato alla macchina di von neumann e ai linguaggi imperativi (assembly, fortran, c/c++)
@@ -63,7 +63,7 @@ function to_string(l) {
 
 const T = x => y => x // K
 const F = x => y => y // KI
-// Possiamo ottere false "flippando" true
+// Possiamo ottenere false "flippando" true
 // CT = F e CF = T quindi NOT è C
 //const F = C(T) // = CK => KI
 
@@ -80,7 +80,7 @@ const F = x => y => y // KI
 const NOT = f => f(F)(T) // C
 
 // NOT T e false!
-//NOT_T = NOT(T) = T(F((T))) = F
+//NOT(T) = T(F)(T) = F
 //
 // OR
 // const OR = a => b => a()()
