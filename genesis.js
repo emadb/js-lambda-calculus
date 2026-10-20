@@ -187,10 +187,11 @@ const CDR = l => SND(SND(l))
 const CONS = h => t => PAIR(F)(PAIR(h)(t))
 // const my_list = CONS(ONE)(CONS(TWO)(CONS(THREE)(EMPTY)))
 
+const Y = h => (f => h(f(f)))(f => h(f(f)))
+
 const Z = f => (x => f(y => x(x)(y)))(x => f(y => x(x)(y)))
 
 const PUSH = l => x => FOLD(l)(CONS(x)(EMPTY))(a => e => CONS(e)(a))
-
 
 const DIVIDE = Z(
   f => m => n =>
